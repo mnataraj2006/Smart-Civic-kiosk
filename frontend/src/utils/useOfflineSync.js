@@ -140,7 +140,7 @@ export const useOfflineSync = () => {
           logMessage = `✅ ${req.type} synced (${req.requestId.slice(0, 8)}…)`;
           console.log(`[OfflineSync] ✅ ${req.requestId}`);
         } catch (err) {
-          const httpStatus = err.response?.status;
+
 
           // 409 Conflict = duplicate already processed → treat as success
           if (err.response?.status === 409) {

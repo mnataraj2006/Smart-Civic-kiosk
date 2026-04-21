@@ -7,7 +7,7 @@ const SuccessScreen = ({ type = 'payment', data, onHome }) => {
   const { t, speak } = useKiosk();
 
   const isOffline = data?.offline === true;
-  const isQueued  = data?.status === 'queued';
+
 
   useEffect(() => {
     const msg = type === 'payment'   ? t('paySuccessSpeak')

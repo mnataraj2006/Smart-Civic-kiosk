@@ -200,7 +200,7 @@ function ResultCard({ data, onClose }) {
 
 /* ─── main screen ───────────────────────────────────────────────────────────── */
 const TransportScreen = ({ onBack, onHome, onSuccess }) => {
-  const { currentUser, speak, t, isOnline, enqueue } = useKiosk();
+  const { currentUser, speak, isOnline, enqueue } = useKiosk();
   const [selected, setSelected] = useState(null);
   const [result, setResult]     = useState(null);
   const [error, setError]       = useState(null);
